@@ -287,8 +287,8 @@ reRaceRealStart(void)
 
 	if (getTextOnly()==false)
 		RmLoadingScreenSetText("Ready.");
-
-	ReInfo->_reTimeMult = 1.0;
+	
+	//ReInfo->_reTimeMult = 1.0;
 //	ReInfo->_reLastTime = -1.0;
 //	ReInfo->s->currentTime = -2.0;
 // GIUSE - let's start immediately, to save time for evolution
