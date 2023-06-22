@@ -25,7 +25,7 @@
 #include <client.h>
 
 #include "linuxspec.h"
-
+static double time_multipler =64;
 static void
 init_args(int argc, char **argv)
 {
@@ -131,11 +131,20 @@ init_args(int argc, char **argv)
         i++;
 
 #ifndef FREEGLUT
-	} else if (strncmp(argv[i], "-m", 2) == 0) {
+	}
+	 else if (strncmp(argv[i], "-m", 2) == 0) {
 	    i++;
 	    GfuiMouseSetHWPresent(); /* allow the hardware cursor */
 #endif
-	} else {
+	} else if (strncmp(argv[i], "-j", 2) == 0)
+	{
+		i++;
+		    printf("time set to %dx realtime!\n", atoi(argv[i])); 
+		    time_multipler = atof(argv[i]);
+        i++;
+	}
+	
+	else {
 	    i++;		/* ignore bad args */
 	}
     }
