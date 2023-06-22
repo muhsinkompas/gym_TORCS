@@ -40,6 +40,7 @@
 static char buf[1024];
 static char path[1024];
 static char path2[1024];
+//static double deneme; // ssssss
 
 cGrScreen::cGrScreen(int myid)
 {
@@ -385,6 +386,7 @@ void cGrScreen::loadParams(tSituation *s)
 	int i;
 	class cGrCamera *cam;
 	char *carName;
+	
 
 	sprintf(path, "%s/%d", GR_SCT_DISPMODE, id);
 
@@ -407,6 +409,7 @@ void cGrScreen::loadParams(tSituation *s)
 
 	curCamHead	= (int)GfParmGetNum(grHandle, path, GR_ATT_CAM_HEAD, NULL, 9);
 	camNum	= (int)GfParmGetNum(grHandle, path, GR_ATT_CAM, NULL, 0);
+	denemee = (double)GfParmGetNum(grHandle, path, TIME_RATIO, NULL, 0); /// ssssss
 	mirrorFlag	= (int)GfParmGetNum(grHandle, path, GR_ATT_MIRROR, NULL, (tdble)mirrorFlag);
 	curCamHead	= (int)GfParmGetNum(grHandle, path2, GR_ATT_CAM_HEAD, NULL, (tdble)curCamHead);
 	camNum	= (int)GfParmGetNum(grHandle, path2, GR_ATT_CAM, NULL, (tdble)camNum);

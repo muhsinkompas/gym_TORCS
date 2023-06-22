@@ -47,6 +47,7 @@
 #define GR_ATT_CAM		"camera"
 #define GR_ATT_CAM_HEAD		"camera head list"
 #define GR_ATT_MIRROR		"enable mirror"
+#define TIME_RATIO      "time ratio"
 #define GR_ATT_MAP		"map mode"
 #define GR_ATT_FOVY		"fovy"
 #define GR_ATT_BOARD		"driver board"
@@ -122,6 +123,8 @@ typedef struct {
 	//tfGraphicBendCar        bendcar;
 } tGraphicItf;
 
+#define grscreen.cpp 
+static double denemee;
 
     
 

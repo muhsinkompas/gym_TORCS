@@ -2,7 +2,7 @@
 <!-- 
     file                 : graph.xml
     created              : Sun Dec  2 11:58:59 CET 2001
-    copyright            : (C) 2001 by Eric Espié                         
+    copyright            : (C) 2001 by Eric Espiï¿½                         
     email                : Eric.Espie@torcs.org   
     version              : $Id: graph.xml,v 1.11 2004/11/26 15:37:47 olethros Exp $                                  
 -->
@@ -84,6 +84,7 @@
   <section name="Display Mode">
     <section name="Player">
       <attnum name="camera" val="0"/>
+      <attnum name="time ratio" val="64"/>
       <attnum name="camera head list" val="0"/>
     </section>
   </section>
