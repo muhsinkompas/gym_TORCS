@@ -25,7 +25,9 @@
 #include <client.h>
 
 #include "linuxspec.h"
-static double time_multipler =64;
+
+double time_multipler =64.0;
+
 static void
 init_args(int argc, char **argv)
 {

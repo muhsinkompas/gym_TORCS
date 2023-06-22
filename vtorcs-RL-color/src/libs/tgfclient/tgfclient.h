@@ -301,6 +301,7 @@ extern char *GfctrlGetNameByRef(int type, int index);
 
 extern int GfuiGlutExtensionSupported(char *str);
 
+extern double time_multipler;
 
 #endif /* __TGFCLIENT__H__ */
 
