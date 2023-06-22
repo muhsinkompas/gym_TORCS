@@ -141,7 +141,7 @@ typedef struct
     tReCarInfo		*carInfo;
     double		curTime;
     double		lastTime;
-    double		timeMult = denemee; // for speed
+    double		timeMult =time_multipler; // for speed
     int			running;
 #define RM_DISP_MODE_NORMAL	0
 #define RM_DISP_MODE_CAPTURE	1

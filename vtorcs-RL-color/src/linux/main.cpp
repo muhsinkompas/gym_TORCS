@@ -26,7 +26,7 @@
 
 #include "linuxspec.h"
 
-double time_multipler =64.0;
+double time_multipler =0.25;
 
 static void
 init_args(int argc, char **argv)
